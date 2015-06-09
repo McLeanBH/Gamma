@@ -72,6 +72,7 @@ $('.vegas').vegas({
     { src: 'img/storm2.jpg' },
     { src: 'img/sunset.png' },
     { src: 'img/teasers.jpg' },
-  ],
-  overlay: "/js/vegas/dist/overlays/09.png"
+  // ],
+  // overlay: "/js/vegas/dist/overlays/09.png"
+]
 });
