@@ -52,7 +52,7 @@ $('.vegas').vegas({
     { src: 'img/jumping-sailfish.jpg' },
     { src: 'img/killer.jpg' },
     { src: 'img/mackeral.jpg' },
-    { src: 'img/marina.png' },
+    { src: 'img/marina.jpg' },
     { src: 'img/marlin.jpg' },
     { src: 'img/miami.jpg' },
     { src: 'img/offshore-fishing.png' },
