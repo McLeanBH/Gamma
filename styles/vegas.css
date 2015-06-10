@@ -14,8 +14,8 @@ html {
 .vegas-slide,
 .vegas-slide-inner {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 30px;
+  left: 20px;
   bottom: 0;
   right: 0;
   border: none;

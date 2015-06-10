@@ -1,5 +1,5 @@
 @import 'bourbon/bourbon';
-$visual-grid: true;
+$visual-grid: false;
 $gutter: em(47px);
 @import 'neat/neat';
 
@@ -9,7 +9,7 @@ $gutter: em(47px);
   padding: 0;
   font-weight: 300;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 #main-wrapper {
@@ -21,7 +21,29 @@ $gutter: em(47px);
 .vegas-container,
 .vegas-wrapper {
   margin: 0 auto;
-  width: 670px;
-  height: 460px;
+  width: 590px;
+  height: 420px;
+  float: left;
   text-align: center;
+  border: 5px solid #fff;
+}
+
+.header-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  .header-left {
+    margin: 0 auto;
+    width: 40%;
+    float: left;
+    text-align: right;
+  }
+
+  .header-right {
+    margin: 0 auto;
+    width: 60%;
+    float: right;
+    text-align: left;
+  }
 }
