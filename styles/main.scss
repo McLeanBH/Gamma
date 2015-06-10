@@ -13,7 +13,7 @@ $gutter: em(47px);
 }
 
 #main-wrapper {
-  min-height: 1000px;
+  min-height: 700px;
   width: 100%;
   margin: auto;
 }
@@ -62,11 +62,6 @@ $gutter: em(47px);
     margin: 0;
 }
 
-/* .vegas-overlay {
-    opacity: .5;
-    background: transparent url(overlays/02.png) center center repeat;
-}
- */
 .vegas-timer {
     top: auto;
     bottom: 0;
@@ -125,7 +120,7 @@ body.vegas-container {
     Transitions
  *************************/
 
-/* fade */
+fade
 .vegas-transition-fade,
 .vegas-transition-fade2 {
     opacity: 0;
@@ -140,7 +135,7 @@ body.vegas-container {
     opacity: 0;
 }
 
-/* blur */
+blur
 .vegas-transition-blur,
 .vegas-transition-blur2 {
     opacity: 0;
@@ -157,7 +152,7 @@ body.vegas-container {
     opacity: 0;
 }
 
-/* flash */
+flash
 .vegas-transition-flash,
 .vegas-transition-flash2 {
     opacity: 0;
@@ -175,7 +170,7 @@ body.vegas-container {
     filter: brightness(25);
 }
 
-/* negative */
+negative
 .vegas-transition-negative,
 .vegas-transition-negative2 {
     opacity: 0;
@@ -271,7 +266,7 @@ body.vegas-container {
     transform: translateY(100%);
 }
 
-/* zoomIn */
+zoomIn
 .vegas-transition-zoomIn,
 .vegas-transition-zoomIn2 {
     transform: scale(0);
@@ -289,7 +284,7 @@ body.vegas-container {
     opacity: 0;
 }
 
-/* zoomOut */
+zoomOut
 .vegas-transition-zoomOut,
 .vegas-transition-zoomOut2 {
     transform: scale(2);
@@ -307,7 +302,7 @@ body.vegas-container {
     opacity: 0;
 }
 
-/* swirlLeft */
+swirlLeft
 .vegas-transition-swirlLeft,
 .vegas-transition-swirlLeft2 {
     transform: scale(2) rotate(35deg);
@@ -325,7 +320,7 @@ body.vegas-container {
     opacity: 0;
 }
 
-/* swirlRight */
+swirlRight
 .vegas-transition-swirlRight,
 .vegas-transition-swirlRight2 {
     transform: scale(2) rotate(-35deg);
@@ -343,9 +338,9 @@ body.vegas-container {
     opacity: 0;
 }
 
-/*************************
+/************************
     Animations
- *************************/
+ ************************/
 
 .vegas-animation-kenburns {
     animation: kenburns ease-out;
@@ -355,7 +350,7 @@ body.vegas-container {
         transform: scale(1.5);
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.5);
     }
 }
 
@@ -367,7 +362,7 @@ body.vegas-container {
         transform: scale(1.5) translate(0, 10%);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -379,7 +374,7 @@ body.vegas-container {
         transform: scale(1.5) translate(0, -10%);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -391,7 +386,7 @@ body.vegas-container {
         transform: scale(1.5) translate(10%, 0);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -403,7 +398,7 @@ body.vegas-container {
         transform: scale(1.5) translate(-10%, 0);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -415,7 +410,7 @@ body.vegas-container {
         transform: scale(1.5) translate(10%, 10%);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -427,7 +422,7 @@ body.vegas-container {
         transform: scale(1.5) translate(-10%, 10%);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -439,7 +434,7 @@ body.vegas-container {
         transform: scale(1.5) translate(10%, -10%);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -451,7 +446,7 @@ body.vegas-container {
         transform: scale(1.5) translate(-10%, -10%);
     }
     100% {
-        transform: scale(1) translate(0, 0);
+        transform: scale(1.5) translate(0, 0);
     }
 }
 
@@ -499,9 +494,8 @@ p {
   font-size: 2em;
 }
 
-a {
-  position: absolute;
-  left: 1em;
+/* a {
+position: absolute;  left: 1em;
   bottom: 3em;
   border: 3px solid #fff;
   border-radius: 8px;
@@ -512,7 +506,7 @@ a {
   text-shadow: 0 0 5px #000;
   font-size: 13px;
   color: #fff;
-  /* animation: pulse 4s infinite; */
+  animation: pulse 4s infinite;
 
   @media screen and (max-width: 720px) {
     display: none;
@@ -545,7 +539,7 @@ a {
   }
 }
 
-
+ */
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
@@ -563,8 +557,8 @@ header.navigation {
   $navigation-search-background: lighten($navigation-background, 5);
   $navigation-search-border: 1px solid darken($navigation-background, 5);
   $navigation-active-link-color: transparentize(white, 0.5);
-  $navigation-submenu-padding: 1em;
-  $navigation-submenu-width: 12em;
+  $navigation-submenu-padding: 10px;
+  $navigation-submenu-width: 150px;
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
@@ -578,6 +572,7 @@ header.navigation {
     @include outer-container;
     position: relative;
     z-index: 9999;
+    margin-left: 0;
   }
 
   .logo {
@@ -764,7 +759,7 @@ header.navigation {
 
     .submenu {
       @include media($horizontal-bar-mode) {
-        left: $navigation-submenu-width - 0.2em;
+        left: $navigation-submenu-width -110px;
         top: 0;
       }
     }
@@ -826,9 +821,10 @@ header.navigation {
     $search-bar-border: 1px solid $search-bar-border-color;
     $search-bar-background: lighten($search-bar-border-color, 10%);
 
-    float: left;
+    float: right;
     padding: 0.85em 0.85em 0.7em 0.6em;
     width: 60%;
+    margin-left: 150px;
 
     form {
       position: relative;
@@ -880,4 +876,219 @@ header.navigation {
       }
     }
   }
+}
+
+.footer {
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  }
+
+  .footer-links {
+  /*   @include clearfix;
+  margin-bottom: $base-spacing;
+
+  @include media($medium-screen) {
+    @include shift(3);
+  } */
+  margin-left: 30%;
+  }
+
+  ul {
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+      @include omega(3n);
+      @include clearfix;
+    }
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center;
+
+    @include media($medium-screen) {
+      text-align: left;
+    }
+  }
+
+  li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3 {
+    color: $footer-color;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 0.4em;
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
+}
+
+.footer-links {
+  margin-left: 30%;
+}
+
+.copy a {
+  text-decoration: none;
+  color: #7E848E;
+}
+
+.content-container {
+  height: 650px;
+  background-color: #333;
+}
+
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items-lines {
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: $base-background-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+  position: relative;
+
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    border-bottom: $grid-item-border;
+    border-right: $grid-item-border;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    &:focus,
+    &:hover {
+      background: transparentize($grid-item-color, 0.95);
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      height: 2.5em;
+      margin-bottom: 1.2em;
+      opacity: 0.2;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+    }
+
+  .grid-item p {
+      color: transparentize($grid-item-color, 0.4);
+      line-height: 1.5em;
+
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }
+    }
+  }
+
+  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    background: $grid-items-background;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: $grid-items-background;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px;
+  }
+}
+
+.content-container a,
+.content-container p,
+.content-container div,
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container h4,
+.content-container h5,
+.content-container h6,
+.content-container img {
+  color: #000;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1;
 }

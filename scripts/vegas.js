@@ -1,6 +1,6 @@
 $('.vegas').vegas({
   overlay: true,
-  transition: 'fade',
+  transition: 'slideup',
   transitionDuration: 2500,
   delay: 3500,
   animation: 'random',
@@ -55,7 +55,6 @@ $('.vegas').vegas({
     { src: 'img/marina.jpg' },
     { src: 'img/marlin.jpg' },
     { src: 'img/miami.jpg' },
-    { src: 'img/offshore-fishing.png' },
     { src: 'img/open-water.png' },
     { src: 'img/pacific-sailfish.jpg' },
     { src: 'img/racing.jpg' },
