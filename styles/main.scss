@@ -463,11 +463,6 @@ h1, h2, p, strong {
   margin-right: 130px;
   line-height: 1em;
   text-align: right;
-  text-transform: uppercase;
-  text-shadow:
-    -1px -1px 1px rgba(#000, .3),
-     1px 1px 1px rgba(#000, .3),
-     0 0 10px #000;
 }
 
 h1 {
@@ -494,52 +489,6 @@ p {
   font-size: 2em;
 }
 
-/* a {
-position: absolute;  left: 1em;
-  bottom: 3em;
-  border: 3px solid #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #000;
-  padding: 20px 40px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 0 5px #000;
-  font-size: 13px;
-  color: #fff;
-  animation: pulse 4s infinite;
-
-  @media screen and (max-width: 720px) {
-    display: none;
-  }
-}
-
-.container {
-  position: absolute;
-  bottom: 2em;
-  right: 2em;
-}
-
-.vegas-overlay {
-  opacity: .2;
-}
-
-.vegas-timer-progress {
-  background: #fff;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(.8);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(.8);
-  }
-}
-
- */
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
@@ -975,7 +924,7 @@ header.navigation {
 }
 
 .content-container {
-  height: 650px;
+  height: 550px;
   background-color: #333;
 }
 
@@ -996,11 +945,10 @@ header.navigation {
   $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
-  $grid-item-color: $base-font-color;
+  $grid-item-color: #40526B;
   $grid-item-height: 14em;
 
-  @include clearfix;
-  position: relative;
+
 
   .grid-item {
     @include transition (all 0.2s ease-in-out);
@@ -1020,62 +968,72 @@ header.navigation {
       @include grid-item-columns($grid-item-columns);
     }
 
-    &:focus,
-    &:hover {
-      background: transparentize($grid-item-color, 0.95);
-    }
+  &:focus,
+  &:hover {
+    background: transparentize($grid-item-color, 0.045);
+    color: #fff;
   }
+    }
 
+  /*   .grid-item a:focus,
+  .grif-item a:hover,
+  .grid-item p:focus,
+  .grif-item p:hover,
+  .grid-item h1:focus,
+  .grif-item h1:hover {
+    color: transparentize(#fff, 0.5);
+  }
+   */
   .grid-item img {
-      display: block;
-      height: 2.5em;
-      margin-bottom: 1.2em;
-      opacity: 0.2;
+  display: block;
+  height: 2.5em;
+  margin-bottom: 1.2em;
+  opacity: 0.2;
     }
 
   .grid-item h1 {
-      color: $grid-item-color;
-      font-size: 1.3em;
-      margin-bottom: 0.4em;
+  color: $grid-item-color;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
     }
 
   .grid-item p {
-      color: transparentize($grid-item-color, 0.4);
-      line-height: 1.5em;
+  color: transparentize($grid-item-color, 0.4);
+  line-height: 1.5em;
 
-      @include media($medium-screen) {
-        max-width: 70%;
-      }
+  @include media($medium-screen) {
+    max-width: 70%;
+  }
     }
 
   .grid-item-big {
     @include media($large-screen) {
-      @include grid-item-columns($grid-item-big-columns);
+  @include grid-item-columns($grid-item-big-columns);
     }
     p {
-      @include media($medium-screen) {
-        max-width: 60%;
-      }
+  @include media($medium-screen) {
+    max-width: 60%;
+  }
     }
   }
-
-  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
-  .bottom-cover {
-    background: $grid-items-background;
-    bottom: 0px;
-    height: 3px;
-    position: absolute;
-    width: 100%;
-  }
-
-  .right-cover {
-    background: $grid-items-background;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    width: 4px;
-  }
 }
+// this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+/* .bottom-cover {
+  background: #40526B;
+  bottom: 0px;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+}
+
+.right-cover {
+  background: #40526B;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  width: 4px;
+}
+ */
 
 .content-container a,
 .content-container p,
@@ -1088,7 +1046,7 @@ header.navigation {
 .content-container h6,
 .content-container img {
   color: #000;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 100;
   line-height: 1;
 }
