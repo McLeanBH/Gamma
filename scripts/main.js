@@ -14,3 +14,7 @@ $(document).ready(function() {
     $( "#accordion" ).accordion();
   });
 });
+
+$('.rad').on('mouseenter mouseleave', function () {
+  $('.box, .line').toggleClass('open');
+});
